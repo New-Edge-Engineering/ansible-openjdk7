@@ -1,4 +1,4 @@
-# Ansible Java Role #
+# Ansible Open JDK 7 Role #
 
 Ansible role to make sure java is installed Feedback, bug-reports, requests, is
  welcomed and can be done via
@@ -6,12 +6,6 @@ Ansible role to make sure java is installed Feedback, bug-reports, requests, is
 
 ## Requirements & Dependencies ##
 - Tested on Mac OS X with Ansible 1.5.
-
-## Variables ##
-
-```yaml
-java_install: openjdk7 # version to be installed, currently only supporting openjdk7
-```
 
 ## License ##
 
