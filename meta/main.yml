@@ -3,7 +3,7 @@ galaxy_info:
   author: Matthew Green
   company: New Edge Engineering
   description: install open jdk 7
-  min_ansible_version: 1.5
+  min_ansible_version: 1.6
   license: MIT
   platforms:
   - name: Ubuntu

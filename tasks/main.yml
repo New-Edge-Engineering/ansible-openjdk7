@@ -1,5 +1,5 @@
 ---
-- name: install the openjdk-7 package
+- name: Ensure openjdk-7 is installed
   apt:
     pkg=openjdk-7-jdk
     state=latest
@@ -8,8 +8,8 @@
     - java
     - packages
 
-- name: change openjdk to be version 7
-  command: update-java-alternatives -s java-1.7.0-openjdk-amd64
+- name: Ensure java is using change openjdk-7
+  alternatives: name=java path=/usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
   when: openjdk_7_installed|changed
   tags:
     - java
